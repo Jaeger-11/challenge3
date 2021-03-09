@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    box-sizing: border-box;
+    font-family: Poppins;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+.container{
+    margin:10px 100px;
+}
+
+.main_header{
+    font-weight: 200;
+}
+
+b{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.first_p{
+    width: 500px;
+    margin: 0px auto;
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px auto;
+    justify-items: center;
+    grid-gap: 20px;
+    width: 900px;
+    padding: 0px 10px;
+}
+
+header{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    padding: 10px;
+}
+
+p{
+    font-weight: 200;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.sboxes{
+    width: 280px;
+    height: 200px;
+    box-shadow: black;
+    border: 1px transparent solid;
+    border-radius: 8px;
+    box-shadow:0 8px 10px -3px hsl(229, 6%, 66%);
+    background-color: white;
+    padding: 10px;
+}
+
+.S1{
+    border-top: hsl(180, 62%, 55%) 5px solid;
+    position: relative;
+    top: 50%;
+}
+
+.S2{
+    border-top: hsl(0, 78%, 62%) 5px solid;
+}
+
+.S3{
+    border-top: hsl(34, 97%, 64%) 5px solid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.S4{
+    border-top: hsl(212, 86%, 64%) 5px solid;
+    position: relative;
+    bottom: 55%;
+}
+
+/* .image_box{
+    position: relative;
+} */
+
+img{
+    float: right;
+    width: 50px;
+}
+
+@media (max-width: 1200px){
+    .container{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 850px){
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 15px auto;
+        width: auto;
+    }
+    .S1{
+        top: 0;
+    }
+    .S3{
+        grid-column-start: 0;
+        grid-column-end: 1;    
+    }
+    .S4{
+        bottom: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .main_header{
+        font-size: 20px;
+    }
+    .first_p{
+        width: auto;
+        text-justify: auto;
+        text-align: justify;
+        padding: 10px;
+        margin: 0px 10px;
+    }
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 15px auto;
+    }
+    .S1{
+        top: 0;
+    }
+    .S3{
+        grid-column-start: 0;
+        grid-column-end: 1;    
+    }
+    .S4{
+        bottom: 0;
+    }
+    .sboxes{
+        border-radius: 5px; 
+        box-shadow:0 8px 10px -3px hsl(229, 6%, 66%);
+        background-color: white;
+        padding: 20px;
+    }
+}
